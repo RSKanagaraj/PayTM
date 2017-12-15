@@ -13,7 +13,6 @@ public class App {
 		System.setProperty("webdriver.chrome.driver", "./driversexe/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");
-		System.out.println(driver.getTitle());
 	}
 
 }
