@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,31 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  3 skipped,  </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hybridframework.App" hash-for-method="abc">abc</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hybridframework.NewTest" hash-for-method="testEasy">testEasy</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hybridframework.App" hash-for-method="xyz">xyz</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hybridframework.CharSplitfromString" hash-for-method="xyz">xyz</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,63 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.hybridframework.NewTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testEasy">
-                  </a> <!-- testEasy -->
-                  <span class="method-name">testEasy</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:141)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:158)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
-	at com.hybridframework.NewTest.beforeTest(NewTest.java:20)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.hybridframework.CharSplitfromString</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="xyz">
-                  </a> <!-- xyz -->
-                  <span class="method-name">xyz</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:141)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:158)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
-	at com.hybridframework.NewTest.beforeTest(NewTest.java:20)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.hybridframework.App</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -192,22 +133,27 @@
                   <a name="abc">
                   </a> <!-- abc -->
                   <span class="method-name">abc</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:141)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:158)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
-	at com.hybridframework.NewTest.beforeTest(NewTest.java:20)
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [abc] with [interface org.openqa.selenium.WebDriver].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xyz">
+                  </a> <!-- xyz -->
+                  <span class="method-name">xyz</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [xyz] with [interface org.openqa.selenium.WebDriver].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
 ... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -221,9 +167,6 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.hybridframework.App&quot;/&gt;
-      &lt;class name=&quot;com.hybridframework.CharSplitfromString&quot;/&gt;
-      &lt;class name=&quot;com.hybridframework.NewTest&quot;/&gt;
-      &lt;class name=&quot;com.hybridframework.AppTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -237,7 +180,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,19 +206,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'abc')
 data.setCell(0, 2, 'com.hybridframework.App')
 data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testEasy')
-data.setCell(1, 2, 'com.hybridframework.NewTest')
+data.setCell(1, 1, 'xyz')
+data.setCell(1, 2, 'com.hybridframework.App')
 data.setCell(1, 3, 0);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'xyz')
-data.setCell(2, 2, 'com.hybridframework.CharSplitfromString')
-data.setCell(2, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -305,32 +244,6 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.hybridframework.App</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">abc</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.hybridframework.CharSplitfromString</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">xyz</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.hybridframework.NewTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testEasy</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
